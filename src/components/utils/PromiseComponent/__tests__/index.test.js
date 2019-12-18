@@ -16,9 +16,9 @@
 
 import React from 'react'
 import {mount} from 'enzyme'
+import {FormattedMessage, IntlProvider} from 'react-intl'
 
 import PromiseComponent from '..'
-import {FormattedMessage, IntlProvider} from 'react-intl'
 
 const italian = {'test': 'Questa è una stringa in italiano'}
 

@@ -1,5 +1,5 @@
 {
-  "name": "adas",
+  "name": "%CUSTOM_PLUGIN_SERVICE_NAME%",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

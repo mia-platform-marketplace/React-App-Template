@@ -21,7 +21,6 @@ import {FormattedMessage, IntlProvider} from 'react-intl'
 import PromiseComponent from '..'
 
 const italian = {'test': 'Questa è una stringa in italiano'}
-
 const english = {'test': 'This is an english string'}
 
 describe('PromiseComponent', () => {

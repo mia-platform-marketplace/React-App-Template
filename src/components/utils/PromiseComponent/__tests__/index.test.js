@@ -20,9 +20,9 @@ import {FormattedMessage, IntlProvider} from 'react-intl'
 
 import PromiseComponent from '..'
 
-const italian = {'test': 'Questa è una stringa in italiano'}
+const italian = {'learn': 'Impara React'}
 
-const english = {'test': 'This is an english string'}
+const english = {'learn': 'Learn React'}
 
 describe('PromiseComponent', () => {
   it('renders children passing data if italian data is defined', (done) => {
@@ -31,14 +31,14 @@ describe('PromiseComponent', () => {
       <PromiseComponent promiseFunction={promiseFunction}>
         {data => (
           <IntlProvider locale={'en'} messages={data}>
-            <FormattedMessage id='test' />
+            <FormattedMessage id='learn' />
           </IntlProvider>
         )}
       </PromiseComponent>
     )
     setImmediate(() => {
       element.mount()
-      expect(element.find(FormattedMessage).text()).toEqual('Questa è una stringa in italiano')
+      expect(element.find(FormattedMessage).text()).toEqual('Impara React')
       done()
     })
   })
@@ -49,14 +49,14 @@ describe('PromiseComponent', () => {
       <PromiseComponent promiseFunction={promiseFunction}>
         {data => (
           <IntlProvider locale={'en'} messages={data}>
-            <FormattedMessage id='test' />
+            <FormattedMessage id='learn' />
           </IntlProvider>
         )}
       </PromiseComponent>
     )
     setImmediate(() => {
       element.mount()
-      expect(element.find(FormattedMessage).text()).toEqual('This is an english string')
+      expect(element.find(FormattedMessage).text()).toEqual('Learn React')
       done()
     })
   })

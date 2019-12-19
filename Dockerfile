@@ -1,7 +1,5 @@
 FROM nexus.mia-platform.eu/core/static-files:3.2.2 as build
 
-USER root
-
 WORKDIR /build-dir
 
 COPY ./build .

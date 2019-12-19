@@ -3,7 +3,6 @@ import {FormattedMessage} from 'react-intl'
 
 import logo from './logo.svg'
 import './App.css'
-import HelloWorld from './containers/HelloWorld'
 
 class App extends Component {
   render () {
@@ -12,17 +11,17 @@ class App extends Component {
         <header className='App-header'>
           <img alt='logo' className='App-logo' src={logo} />
           <p>
-            {'Edit'} <code>{'src/App.js'}</code> {'and save to reload.'}
+            <FormattedMessage id={'edit'} />
+            <code>{'src/App.js'}</code>
+            <FormattedMessage id={'save'} />
           </p>
-          <HelloWorld />
-          <FormattedMessage id={'test'} />
           <a
             className='App-link'
             href='https://reactjs.org'
             rel='noopener noreferrer'
             target='_blank'
           >
-            {'Learn React'}
+            <FormattedMessage id={'learn'} />
           </a>
         </header>
       </div>

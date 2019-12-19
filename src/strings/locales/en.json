@@ -1,3 +1,5 @@
 {
-    "test": "This is an english string"
+    "edit": "Edit ",
+    "save": "and save to reload",
+    "learn": "Learn React"
 }

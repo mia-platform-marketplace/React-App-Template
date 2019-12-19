@@ -1,3 +1,5 @@
 {
-    "test": "Questa è una stringa in italiano"
+    "edit": "Modifica ",
+    "save": "e salva per ricaricare",
+    "learn": "Impara React"
 }

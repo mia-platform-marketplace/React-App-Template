@@ -73,7 +73,8 @@ describe('PromiseComponent', () => {
       expect(children).toHaveBeenCalledTimes(0)
     })
   })
-  it('renders div with Loading... when usePromise returns data undefined and isError false', () => {
+
+  it('renders div with loading message when usePromise returns data undefined and isError false', () => {
     const promiseFunction = jest.fn().mockResolvedValue(undefined)
     const children = jest.fn()
     const element = mount(

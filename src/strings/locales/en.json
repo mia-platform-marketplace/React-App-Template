@@ -1,5 +1,4 @@
 {
-    "edit": "Edit ",
-    "save": " and save to reload",
+    "edit": "Edit src/App.js and save to reload",
     "learn": "Learn React"
 }

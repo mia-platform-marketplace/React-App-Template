@@ -12,8 +12,6 @@ class App extends Component {
           <img alt='logo' className='App-logo' src={logo} />
           <p>
             <FormattedMessage id={'edit'} />
-            <code>{'src/App.js'}</code>
-            <FormattedMessage id={'save'} />
           </p>
           <a
             className='App-link'

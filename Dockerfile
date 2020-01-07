@@ -1,12 +1,14 @@
 FROM nexus.mia-platform.eu/core/static-files:3.2.2 as build
 
+USER root
+
 WORKDIR /build-dir
 
 COPY ./build .
 
 COPY LICENSE .
 
-RUN echo ": $COMMIT_SHA" >> ./commit.sha
+RUN echo "%CUSTOM_PLUGIN_SERVICE_NAME%: $COMMIT_SHA" >> ./commit.sha
 
 ################################################################################à
 

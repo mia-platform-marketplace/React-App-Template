@@ -1,17 +1,3 @@
-import React from 'react'
-import {IntlProvider} from 'react-intl'
-import {Provider} from 'react-redux'
-import {MemoryRouter} from 'react-router-dom'
-import {mount, shallow} from 'enzyme'
-
-import strings from './strings'
-
-const testStrings = {
-  ...strings['en'],
-  'test.string': 'string test',
-  'test.values.string': 'string with values {value}'
-}
-
 /*
  * Copyright 2019 Mia srl
  *
@@ -28,6 +14,19 @@ const testStrings = {
  * limitations under the License.
  */
 
+import React from 'react'
+import {IntlProvider} from 'react-intl'
+import {Provider} from 'react-redux'
+import {MemoryRouter} from 'react-router-dom'
+import {mount, shallow} from 'enzyme'
+
+import strings from './strings'
+
+const testStrings = {
+  ...strings['en'],
+  'test.string': 'string test',
+  'test.values.string': 'string with values {value}'
+}
 const intlProvider = new IntlProvider({locale: 'en', messages: testStrings}, {})
 const {intl} = intlProvider.state
 

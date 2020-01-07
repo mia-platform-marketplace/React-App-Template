@@ -36,7 +36,7 @@ const configureStore = () => {
     )
   )
 
-  if (process.env.NODE_ENV === 'development') {
+  if (NODE_ENV === 'development') {
     if (module.hot) {
       module.hot.accept('./reducers', () => {
         store.replaceReducer(persistedReducer)

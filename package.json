@@ -1,5 +1,5 @@
 {
-  "name": "afaf",
+  "name": "%CUSTOM_PLUGIN_SERVICE_NAME%",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -49,12 +49,19 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
     "@babel/register": "^7.0.0",
     "@staticdeploy/mock-server": "^1.10.0",

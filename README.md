@@ -44,6 +44,13 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Build Docker Image
+
+To build your Docker image you need to build your application using `yarn build` as explained above.
+Then build your image using `docker build -t %CUSTOM_PLUGIN_SERVICE_NAME% .`.
+To run your application use `docker run -d -p 8080:8080 %CUSTOM_PLUGIN_SERVICE_NAME%`.
+Finally you can access your application running in localhost on port 8080.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

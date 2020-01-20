@@ -5,12 +5,13 @@
 
 coverage
 __mocks__
-__tests__
-src		
+__tests__	
 .babelrc
 
 mock-server
 node_modules
+public
+src
 
 .dockerignore
 *.env

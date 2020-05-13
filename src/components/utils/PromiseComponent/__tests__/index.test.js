@@ -20,9 +20,9 @@ import {FormattedMessage, IntlProvider} from 'react-intl'
 
 import PromiseComponent from '..'
 
-const italian = {'learn': 'Impara React'}
+const italian = {learn: 'Impara React'}
 
-const english = {'learn': 'Learn React'}
+const english = {learn: 'Learn React'}
 
 describe('PromiseComponent', () => {
   it('renders children passing data if italian data is defined', (done) => {
@@ -30,7 +30,7 @@ describe('PromiseComponent', () => {
     const element = mount(
       <PromiseComponent promiseFunction={promiseFunction}>
         {data => (
-          <IntlProvider locale={'en'} messages={data}>
+          <IntlProvider locale='en' messages={data}>
             <FormattedMessage id='learn' />
           </IntlProvider>
         )}
@@ -48,7 +48,7 @@ describe('PromiseComponent', () => {
     const element = mount(
       <PromiseComponent promiseFunction={promiseFunction}>
         {data => (
-          <IntlProvider locale={'en'} messages={data}>
+          <IntlProvider locale='en' messages={data}>
             <FormattedMessage id='learn' />
           </IntlProvider>
         )}

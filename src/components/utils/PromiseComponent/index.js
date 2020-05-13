@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-curly-brace-presence */
 /*
  * Copyright 2019 Mia srl
  *

@@ -27,7 +27,7 @@ class App extends Component {
         <header className='App-header'>
           <img alt='logo' className='App-logo' src={logo} />
           <p>
-            <FormattedMessage id={'edit'} />
+            <FormattedMessage id='edit' />
           </p>
           <a
             className='App-link'
@@ -35,7 +35,7 @@ class App extends Component {
             rel='noopener noreferrer'
             target='_blank'
           >
-            <FormattedMessage id={'learn'} />
+            <FormattedMessage id='learn' />
           </a>
         </header>
       </div>

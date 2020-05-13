@@ -23,7 +23,7 @@ import {mount, shallow} from 'enzyme'
 import strings from './strings'
 
 const testStrings = {
-  ...strings['en'],
+  ...strings.en,
   'test.string': 'string test',
   'test.values.string': 'string with values {value}'
 }
@@ -32,7 +32,7 @@ const {intl} = intlProvider.state
 
 export function mountWrapperComponent (children) {
   return mount(
-    <IntlProvider locale={'en'} messages={testStrings}>
+    <IntlProvider locale='en' messages={testStrings}>
       {children}
     </IntlProvider>
   )
@@ -41,7 +41,7 @@ export function mountWrapperComponent (children) {
 export function mountWrapperContainer (store, initialEntries, children) {
   return mount(
     <Provider store={store}>
-      <IntlProvider locale={'en'} messages={testStrings}>
+      <IntlProvider locale='en' messages={testStrings}>
         <MemoryRouter initialEntries={initialEntries}>
           {children}
         </MemoryRouter>

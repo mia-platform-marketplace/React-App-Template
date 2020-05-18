@@ -15,6 +15,7 @@
     "object-curly-spacing": [2, "never"],
     "operator-linebreak": [2, "after"],
     "react/jsx-closing-bracket-location": 2,
+    "react/jsx-curly-brace-presence": "off",
     "react/jsx-first-prop-new-line": 2,
     "react/jsx-no-literals": 2,
     "react/jsx-sort-props": 2,

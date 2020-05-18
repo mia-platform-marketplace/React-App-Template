@@ -23,7 +23,7 @@ import storage from 'redux-persist/lib/storage'
 import reducers from './reducers'
 import {NODE_ENV} from './config'
 
-let middlewares = [thunkMiddleware]
+const middlewares = [thunkMiddleware]
 
 if (NODE_ENV === 'development') {
   const {createLogger} = require('redux-logger')

@@ -20,9 +20,9 @@ import {FormattedMessage, IntlProvider} from 'react-intl'
 
 import PromiseComponent from '..'
 
-const italian = {'learn': 'Impara React'}
+const italian = {learn: 'Impara React'}
 
-const english = {'learn': 'Learn React'}
+const english = {learn: 'Learn React'}
 
 describe('PromiseComponent', () => {
   it('renders children passing data if italian data is defined', (done) => {

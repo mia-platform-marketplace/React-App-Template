@@ -23,7 +23,7 @@ import {mount, shallow} from 'enzyme'
 import strings from './strings'
 
 const testStrings = {
-  ...strings['en'],
+  ...strings.en,
   'test.string': 'string test',
   'test.values.string': 'string with values {value}'
 }

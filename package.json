@@ -2,6 +2,7 @@
   "name": "%CUSTOM_PLUGIN_SERVICE_NAME%",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "axios": "^0.19.2",
     "eslint-plugin-flowtype": "^5.1.0",

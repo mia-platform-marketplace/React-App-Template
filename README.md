@@ -1,4 +1,4 @@
-# %CUSTOM_PLUGIN_SERVICE_NAME%
+# mia_template_service_name_placeholder
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -47,8 +47,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Build Docker Image
 
 To build your Docker image you need to build your application using `yarn build` as explained above.
-Then build your image using `docker build -t %CUSTOM_PLUGIN_SERVICE_NAME% .`.
-To run your application use `docker run -d -p 8080:8080 %CUSTOM_PLUGIN_SERVICE_NAME%`.
+Then build your image using `docker build -t mia_template_service_name_placeholder .`.
+To run your application use `docker run -d -p 8080:8080 mia_template_service_name_placeholder`.
 Finally you can access your application running in localhost on port 8080.
 
 ## Learn More

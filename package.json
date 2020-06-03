@@ -1,5 +1,5 @@
 {
-  "name": "%CUSTOM_PLUGIN_SERVICE_NAME%",
+  "name": "mia_template_service_name_placeholder",
   "version": "0.1.0",
   "private": true,
   "homepage": "./",

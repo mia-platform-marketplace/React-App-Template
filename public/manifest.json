@@ -1,6 +1,6 @@
 {
-  "short_name": "%CUSTOM_PLUGIN_SERVICE_NAME%",
-  "name": "%CUSTOM_PLUGIN_SERVICE_NAME%",
+  "short_name": "mia_template_service_name_placeholder",
+  "name": "mia_template_service_name_placeholder",
   "icons": [
     {
       "src": "favicon.ico",

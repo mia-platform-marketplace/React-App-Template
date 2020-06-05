@@ -36,7 +36,7 @@ if (NODE_ENV === 'development') {
 const rootReducer = combineReducers(reducers)
 
 const persistConfig = {
-  key: '%CUSTOM_PLUGIN_SERVICE_NAME%',
+  key: 'mia_template_service_name_placeholder',
   storage,
   whitelist: []
 }

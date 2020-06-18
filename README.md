@@ -31,4 +31,4 @@ curl <YOUR_PROJECT_HOST>/react/
 
 you should see a react-based webpage with a link to a [React](https://reactjs.org/) tutorial.
 
-Congratulations! You have successfully learnt how to use our Node.js _React_ Template on the DevOps Console!
+Congratulations! You have successfully learnt how to use our _React_ Template on the DevOps Console!

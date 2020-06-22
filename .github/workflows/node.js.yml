@@ -27,6 +27,7 @@ jobs:
     - run: yarn install --frozen-lockfile
     - run: yarn run build
     - run: yarn test
+    - run: yarn i -D handlebars@4.5.0
     - run: yarn add --dev coveralls
     - run: yarn run coverage
 

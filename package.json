@@ -27,7 +27,6 @@
     "test": "react-scripts test",
     "lint": "eslint src --ext .js",
     "coverage": "yarn test --coverage --watchAll=false",
-    "postcoverage": "tap --coverage-report=lcov --no-browser",
     "dev:unit-watch": "yarn test",
     "dev:mock-server": "mock-server --delay 200 --watch --require @babel/register",
     "dev:styleguide": "styleguidist server",

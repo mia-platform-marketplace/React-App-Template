@@ -1,6 +1,7 @@
 # React Template walkthrough
 
 [![Build Status][github-actions-svg]][github-actions]
+[![Coverage Status][coverall-svg]][coverall-io]
 
 This walkthrough will explain you how to correctly create a microservice that renders a React based webpage from the DevOps Console.
 
@@ -47,3 +48,5 @@ Congratulations! You have successfully learnt how to use our _React_ Template on
 
 [github-actions]: https://github.com/mia-platform-marketplace/React-App-Template/actions
 [github-actions-svg]: https://github.com/mia-platform-marketplace/React-App-Template/workflows/Node.js%20CI/badge.svg
+[coverall-svg]: https://coveralls.io/repos/github/mia-platform-marketplace/React-App-Template/badge.svg?branch=master
+[coverall-io]: https://coveralls.io/github/mia-platform-marketplace/React-App-Template?branch=master

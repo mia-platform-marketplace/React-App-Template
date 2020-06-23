@@ -27,3 +27,11 @@ jobs:
     - run: yarn install --frozen-lockfile
     - run: yarn run build
     - run: yarn test
+    - run: yarn add --dev coveralls
+    - run: yarn add -D handlebars@4.5.0
+    - run: yarn run coverage
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}

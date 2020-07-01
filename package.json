@@ -5,7 +5,7 @@
   "homepage": "./",
   "dependencies": {
     "axios": "^0.19.2",
-    "eslint-plugin-flowtype": "^5.1.4",
+    "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-react": "^7.20.2",
     "prop-types": "^15.7.2",

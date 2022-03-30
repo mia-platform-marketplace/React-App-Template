@@ -15,37 +15,18 @@
  */
 
 import React from 'react'
-import {mount} from 'enzyme'
 import {FormattedMessage, IntlProvider} from 'react-intl'
+import {waitFor} from '@testing-library/react'
 
+import {renderComponent} from '../../../../utilsTests'
 import PromiseComponent from '..'
-
-const italian = {learn: 'Impara React'}
 
 const english = {learn: 'Learn React'}
 
 describe('PromiseComponent', () => {
-  it('renders children passing data if italian data is defined', (done) => {
-    const promiseFunction = jest.fn().mockResolvedValueOnce(italian)
-    const element = mount(
-      <PromiseComponent promiseFunction={promiseFunction}>
-        {data => (
-          <IntlProvider locale={'en'} messages={data}>
-            <FormattedMessage id='learn' />
-          </IntlProvider>
-        )}
-      </PromiseComponent>
-    )
-    setImmediate(() => {
-      element.mount()
-      expect(element.find(FormattedMessage).text()).toEqual('Impara React')
-      done()
-    })
-  })
-
-  it('renders children passing data if english data is defined', (done) => {
+  test('renders children passing data if english data is defined', async () => {
     const promiseFunction = jest.fn().mockResolvedValueOnce(english)
-    const element = mount(
+    const element = renderComponent(
       <PromiseComponent promiseFunction={promiseFunction}>
         {data => (
           <IntlProvider locale={'en'} messages={data}>
@@ -54,38 +35,36 @@ describe('PromiseComponent', () => {
         )}
       </PromiseComponent>
     )
-    setImmediate(() => {
-      element.mount()
-      expect(element.find(FormattedMessage).text()).toEqual('Learn React')
-      done()
-    })
+    await waitFor(
+      () => expect(element.getByText('Learn React')).toBeInTheDocument()
+    )
   })
 
-  it('renders div with error when usePromise returns data undefined and isError true', () => {
+  test('renders div with error when usePromise returns data undefined and isError true', async () => {
     const promiseFunction = jest.fn().mockRejectedValueOnce({isError: true})
     const children = jest.fn()
-    const element = mount(
+    const element = renderComponent(
       <PromiseComponent promiseFunction={promiseFunction}>
         {data => children(data)}
       </PromiseComponent>
     )
-    setImmediate(() => {
-      expect(element.find('div').text()).toEqual('Error')
-      expect(children).toHaveBeenCalledTimes(0)
-    })
+
+    await waitFor(
+      () => expect(element.getByText('Error')).toBeInTheDocument()
+    )
   })
 
-  it('renders div with loading message when usePromise returns data undefined and isError false', () => {
+  test('renders div with loading message when usePromise returns data undefined and isError false', async () => {
     const promiseFunction = jest.fn().mockResolvedValue(undefined)
     const children = jest.fn()
-    const element = mount(
+    const element = renderComponent(
       <PromiseComponent promiseFunction={promiseFunction}>
         {data => children(data)}
       </PromiseComponent>
     )
-    setImmediate(() => {
-      expect(element.find('div').text()).toEqual('Loading...')
-      expect(children).toHaveBeenCalledTimes(0)
-    })
+
+    await waitFor(
+      () => expect(element.getByText('Loading...')).toBeInTheDocument()
+    )
   })
 })
